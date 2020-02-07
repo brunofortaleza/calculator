@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Calculadora</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container col-md-3">
+            <form name="Calc">
+                <input class="form-control" type="text" name="valor" placeholder="Digite o valor">
+                <br>
+                <div class="container">
+                    <input class="btn btn-dark" type="button" value="0" name="0" onClick="Calc.valor.value += '0'"></input>
+                    <input class="btn btn-dark" type="button" value="1" name="1" onClick="Calc.valor.value += '1'"></input>
+                    <input class="btn btn-dark" type="button" value="2" name="2" onClick="Calc.valor.value += '2'"></input>
+                    <input class="btn btn-dark" type="button" value=" - " onClick="Calc.valor.value += '-'" ></input>
+                    <br> 
+                    <input class="btn btn-dark" type="button" value="3" name="3" onClick="Calc.valor.value += '3'"></input>
+                    <input class="btn btn-dark" type="button" value="4" name="4" onClick="Calc.valor.value += '4'"></input>
+                    <input class="btn btn-dark" type="button" value="5" name="5" onClick="Calc.valor.value += '5'"></input>
+                    <input class="btn btn-dark" type="button" value=" *" onClick="Calc.valor.value += '*'" ></input>
+                    <br> 
+                    <input class="btn btn-dark" type="button" value="6" name="6" onClick="Calc.valor.value += '6'"></input>
+                    <input class="btn btn-dark" type="button" value="7" name="7" onClick="Calc.valor.value += '7'"></input>
+                    <input class="btn btn-dark" type="button" value="8" name="8" onClick="Calc.valor.value += '8'"></input>
+                    <input class="btn btn-dark" type="button" value=" / " onClick="Calc.valor.value += '/'" ></input>
+                    <br> 
+                    <input class="btn btn-dark" type="button" value="9" name="9" onClick="Calc.valor.value += '9'"></input>
+                    <input class="btn btn-dark" type="button" value="." name="." onClick="Calc.valor.value += '.'"></input>
+                    <input class="btn btn-dark" type="button" value=" = " value="calcular" onClick="Calc.valor.value = eval(Calc.valor.value)"></input>
+                    <input class="btn btn-dark" type="button" value=" + " onClick="Calc.valor.value += '+'"></input>
+                    <br>
+                    <input class="btn btn-dark" type="button" value="Limpar" name="limpar" onClick="Calc.valor.value = ''" ></input>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
